@@ -1,0 +1,26 @@
+# VS Code
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Java/Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# Node.js/Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+.eslintcache
+
+# OS
+.DS_Store
+Thumbs.db
