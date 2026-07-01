@@ -1,0 +1,36 @@
+@import './Layout.css';
+@import './Components.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+:root {
+  --primary-color: #0066cc;
+  --secondary-color: #00aa00;
+  --danger-color: #cc0000;
+  --success-color: #00cc00;
+  --border-radius: 8px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Unified Layout Container width, spacing and alignment */
+.as-dashboard-container,
+.dashboard-container,
+.dashboard,
+.job-detail-container,
+.job-list {
+  max-width: 1560px !important;
+  margin: 0 auto !important;
+  padding: 2.5rem 2rem !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}

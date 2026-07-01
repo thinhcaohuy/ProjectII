@@ -1,0 +1,161 @@
+/* =========================
+   CANDIDATE APPLICATIONS PAGE
+========================= */
+
+.applications-filter-tabs {
+  display: flex;
+  gap: 2rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0;
+}
+
+.filter-tab {
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 0.75rem 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.filter-tab:hover {
+  color: #0f172a;
+}
+
+.filter-tab.active {
+  color: #0f62fe;
+}
+
+.applications-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.application-card-detailed {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.application-card-detailed:hover {
+  border-color: #0f62fe;
+  box-shadow: 0 4px 12px rgba(15, 98, 254, 0.1);
+  transform: translateY(-2px);
+}
+
+.application-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.application-job-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.application-company {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #0f62fe;
+  font-weight: 500;
+}
+
+.status-badge-large {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.application-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.detail-row label {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.detail-row span {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.application-card-actions {
+  display: flex;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.application-card-actions .action-btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .applications-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .applications-filter-tabs {
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+
+  .filter-tab {
+    white-space: nowrap;
+  }
+
+  .application-card-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .status-badge-large {
+    align-self: flex-start;
+  }
+}
+
+/* Stats Grid Variant for Danger */
+.stat-card--danger {
+  border-left: 4px solid #ef4444;
+}
+
+.stat-card--danger::before {
+  background: linear-gradient(90deg, #ef4444, #dc2626);
+}

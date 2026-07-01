@@ -1,0 +1,38 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.6)
+
+2026-05-01T16:16:27.558+07:00  INFO 178605 --- [recruitment-backend] [           main] com.recruitment.RecruitmentApplication   : Starting RecruitmentApplication v1.0.0 using Java 21.0.10 with PID 178605 (/home/nickfury/Documents/CodeProjectII/backend/target/recruitment-backend-1.0.0.jar started by nickfury in /home/nickfury/Documents/CodeProjectII/backend)
+2026-05-01T16:16:27.559+07:00 DEBUG 178605 --- [recruitment-backend] [           main] com.recruitment.RecruitmentApplication   : Running with Spring Boot v3.3.6, Spring v6.1.15
+2026-05-01T16:16:27.559+07:00  INFO 178605 --- [recruitment-backend] [           main] com.recruitment.RecruitmentApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-01T16:16:27.943+07:00  INFO 178605 --- [recruitment-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T16:16:27.989+07:00  INFO 178605 --- [recruitment-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 12 JPA repository interfaces.
+2026-05-01T16:16:28.302+07:00  INFO 178605 --- [recruitment-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-01T16:16:28.311+07:00  INFO 178605 --- [recruitment-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-01T16:16:28.311+07:00  INFO 178605 --- [recruitment-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-05-01T16:16:28.337+07:00  INFO 178605 --- [recruitment-backend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-01T16:16:28.338+07:00  INFO 178605 --- [recruitment-backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 751 ms
+2026-05-01T16:16:28.439+07:00  INFO 178605 --- [recruitment-backend] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-01T16:16:28.476+07:00  INFO 178605 --- [recruitment-backend] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-05-01T16:16:28.508+07:00  INFO 178605 --- [recruitment-backend] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T16:16:28.696+07:00  INFO 178605 --- [recruitment-backend] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T16:16:28.712+07:00  INFO 178605 --- [recruitment-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-01T16:16:28.896+07:00  INFO 178605 --- [recruitment-backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e31d53b
+2026-05-01T16:16:28.897+07:00  INFO 178605 --- [recruitment-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-01T16:16:28.921+07:00  WARN 178605 --- [recruitment-backend] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T16:16:28.922+07:00  WARN 178605 --- [recruitment-backend] [           main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-01T16:16:29.590+07:00  INFO 178605 --- [recruitment-backend] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T16:16:29.629+07:00  INFO 178605 --- [recruitment-backend] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-01T16:16:29.831+07:00  INFO 178605 --- [recruitment-backend] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-01T16:16:30.156+07:00  WARN 178605 --- [recruitment-backend] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-01T16:16:30.389+07:00  INFO 178605 --- [recruitment-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-05-01T16:16:30.396+07:00  INFO 178605 --- [recruitment-backend] [           main] com.recruitment.RecruitmentApplication   : Started RecruitmentApplication in 3.028 seconds (process running for 3.254)
+2026-05-01T16:16:36.439+07:00  INFO 178605 --- [recruitment-backend] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-01T16:16:36.439+07:00  INFO 178605 --- [recruitment-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-01T16:16:36.440+07:00  INFO 178605 --- [recruitment-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
